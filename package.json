@@ -1,0 +1,21 @@
+{
+  "name": "excel_to_json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node index.js && npm run fix && npm run remove-duplicates",
+    "generate:specific": "node generate-specific.js && npm run fix && npm run remove-duplicates",
+    "fix": "node ./utils/clean-json-files.js",
+    "remove-duplicates": "node ./utils/remove-duplicates.js",
+    "clean": "rm -rf ./output/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "line-reader": "^0.4.0",
+    "xlsx": "^0.18.5"
+  }
+}

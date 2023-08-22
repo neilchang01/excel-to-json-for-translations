@@ -1,0 +1,6 @@
+node_modules
+input/input.xlsx
+output/en.json
+output/zh_CN.json
+output/zh_TW.json
+deprecated
