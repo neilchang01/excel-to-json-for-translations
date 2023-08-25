@@ -44,7 +44,7 @@ async function processExcelFile(excelFilePath, outputDirectory) {
 // CONFIGURATION
 const excelFilePath = './input/input.xlsx';
 const outputDirectory = 'output';
-const keyColumnIndex = 3;
+const keyColumnIndex = 4;
 const enColumnIndex = 5;
 const zhCnColumnIndex = 6;
 const zhTwColumnIndex = 7;
