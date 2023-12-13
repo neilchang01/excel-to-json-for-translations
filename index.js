@@ -12,6 +12,10 @@ async function processExcelFile(excelFilePath, outputDirectory) {
 
     workbook.SheetNames.forEach(sheetName => {
         const worksheet = workbook.Sheets[sheetName];
+
+        if (skipSheets.includes(sheetName)) {
+            return;
+        }
         
         const range = xlsx.utils.decode_range(worksheet['!ref']);
         
@@ -44,6 +48,7 @@ async function processExcelFile(excelFilePath, outputDirectory) {
 // CONFIGURATION
 const excelFilePath = './input/input.xlsx';
 const outputDirectory = 'output';
+const skipSheets = ['Version Tracking'];
 const keyColumnIndex = 3;
 const enColumnIndex = 5;
 const zhCnColumnIndex = 6;
