@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate": "node index.js && npm run fix && npm run remove-duplicates",
+    "generate": "node index.js && npm run fix && npm run remove-duplicates && npm run enumerate",
     "generate:specific": "node generate-specific.js && npm run fix && npm run remove-duplicates",
+    "enumerate": "node generate-enum.js",
     "fix": "node ./utils/clean-json-files.js",
     "remove-duplicates": "node ./utils/remove-duplicates.js",
     "clean": "rm -rf ./output/*"
