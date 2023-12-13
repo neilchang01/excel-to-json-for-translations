@@ -16,8 +16,10 @@ npm install
 ```
 ## Usage
 
-1. Place your input Excel file named input.xlsx in the `./input` directory.
-2. Create an `output` directory if it doesn't exist.
+1. Download the translation excel and name it `input.xlsx`
+2. Place your input Excel file named input.xlsx in the `./input` directory.
+3. Create an `output` directory if it doesn't exist.
+4. Run `npm run generate` and it should give you everything you need in `output`
 
 ### Generate JSON Files
 
