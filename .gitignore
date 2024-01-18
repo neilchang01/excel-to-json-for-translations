@@ -5,3 +5,6 @@ output/zh_CN.json
 output/zh_TW.json
 output/translation-keys.ts
 deprecated
+utils/generate-diff/diff.json
+utils/generate-diff/old/translation.json
+utils/generate-diff/new/en.json

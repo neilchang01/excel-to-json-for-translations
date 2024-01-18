@@ -7,11 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate": "node index.js && npm run fix && npm run remove-duplicates",
     "generate:specific": "node generate-specific.js && npm run fix && npm run remove-duplicates",
+    "generate:diff": "node ./utils/generate-diff",
     "enumerate": "node generate-enum.js",
     "fix": "node ./utils/clean-json-files.js",
     "remove-duplicates": "node ./utils/remove-duplicates.js",
     "remove-ds": "find . -name '*.DS_Store' -type f -delete",
-    "clean": "find ./output -type f ! -name 'empty-example.json' -delete && npm run remove-ds"
+    "remove-diff": "rm -f utils/generate-diff/old/translation.json utils/generate-diff/new/en.json utils/generate-diff/diff.json",
+    "clean": "find ./output -type f ! -name 'empty-example.json' -delete && npm run remove-ds && npm run remove-diff"
   },
   "keywords": [],
   "author": "",
